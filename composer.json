@@ -1,0 +1,27 @@
+{
+    "name": "rain-plus/eloquent-inject-attribute",
+    "description": "A helper class that injects attributes to Eloquent model.",
+    "type": "library",
+    "keywords": [
+        "flarum",
+        "helper",
+        "model",
+        "inject"
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/database": "^8.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RainPlus\\EloquentInjectAttribute\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "YUCLing",
+            "email": "luotianyi@luotianyi.me"
+        }
+    ]
+}
