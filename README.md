@@ -1,5 +1,7 @@
 A helper class that can be used to inject attributes into an Eloquent model without having to modify the model.
 
+This class cannot inject default values to models that weren't created by Eloquent (like using `new static`). But still can trigger the save event. You will have to handle this by yourself.
+
 Example
 ```php
 (new InjectModelAttribute(User::class))

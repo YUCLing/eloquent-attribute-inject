@@ -46,6 +46,10 @@ class InjectModelAttribute
                         } else {
                             $model->{$name} = $value;
                         }
+                        $originalProp = $this->reflection->getProperty('original');
+                        $originalProp->setValue($model, array_merge($originalProp->getValue($model) ?: [], [
+                            $name => $model->{$name}
+                        ]));
                     }
                 });
             } else if ($method->name === 'saving') {
